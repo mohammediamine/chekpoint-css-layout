@@ -1,0 +1,368 @@
+@media only screen and (max-width:600px) {
+    .navbar {
+        display: none;
+    }
+    .titre-1 {
+        font-size: 1.5rem;
+    }
+    .titre-2 {
+        font-size: 1rem;
+    }
+    .from {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .navbar {
+        display: flex;
+    }
+    .titre-1 {
+        font-size: 2.75rem;
+    }
+    .titre-2 {
+        font-size: 1.5rem;
+    }
+    .from {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(253, 250, 250);
+    justify-content: space-between;
+    box-shadow: 0 1px 1px -1px gray;
+    position: fixed;
+}
+
+.left-side {
+    width: 40%;
+    height: inherit;
+    background-color: rgb(253, 250, 250);
+    display: flex;
+    align-items: center;
+}
+
+.right-side {
+    width: 40%;
+    height: inherit;
+    background-color: rgb(253, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    width: 6rem;
+    height: 3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    cursor: pointer;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.items span {
+    color: #2d2d2d;
+    font-size: .750rem;
+    font-family: noto sans, Roboto, sans-serif;
+}
+
+.items:hover {
+    border-bottom: #2557a7 1px solid;
+}
+
+.pipe {
+    border-right: 1px solid #2d2d2d;
+    height: .9rem;
+}
+
+.selected span {
+    color: #2557a7;
+    font-weidht: bold;
+}
+
+.main {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 5rem;
+    width: 65%;
+    height: 50vh;
+}
+
+.top-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-1 {
+    line-height: 1.25;
+    color: #2d2d2d;
+    font-weight: 700;
+    font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+}
+
+.titre-2 {
+    margin-top: 1rem;
+    line-height: 1.5;
+    color: #595959;
+    font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+    font-weight: 400;
+}
+
+.form {
+    height: 15vh;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.container-input-1 {
+    width: 30%;
+    display: table-column;
+    align-self: flex-end;
+}
+
+.container-input-2 {
+    width: 30%;
+    display: table-column;
+    align-self: flex-end;
+}
+
+.container-input-1 input, .container-input-2 input {
+    border-radius: .5rem;
+    outline: none;
+    height: 3rem;
+    width: 90%;
+}
+
+.container-input-1 span, .container-input-2 span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container-input-1 input:focus, .container-input-2 input:focus {
+    border-bottom: 3px solid #17315a;
+    border-color: #2557a7;
+}
+
+.container-input-1 input:hover, .container-input-2 input:hover {
+    border-color: #2557a7;
+}
+
+.container-input-1 input {
+    background-image: url(./image/loup.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffffff;
+    background-size: 1.5rem;
+}
+
+.container-input-2 input {
+    background-image: url(./image/localisateur.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffffff;
+    background-size: 1.5rem;
+}
+
+.search {
+    width: 30%;
+    height: 3rem;
+    background-color: #2557a7;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.search span {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search:hover {
+    background-color: #0039cb;
+}
+
+.bot-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-3 {
+    text-decoration: underline;
+    color: #2557a7;
+    font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.bot-content, .titre-3:hover {
+    color: #092d66;
+}
+
+.heading {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #2d2d2d;
+    font-weight: 700;
+    font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+}
+
+.log-content {
+    margin-top: 2rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.log {
+    width: 33%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.log1 {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.log1img {
+    width: 30%;
+}
+
+.log1img img {
+    width: 80%;
+    height: 50%;
+}
+
+.log1texte {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divstar {
+    display: flex;
+}
+
+.divstar img {
+    width: 55%;
+    display: flex;
+}
+
+.log2 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.log2 span {
+    width: 30%;
+    height: 40%;
+    font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+    font-weight: inherit;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #595959;
+    cursor: pointer;
+}
+
+.log2 span:hover {
+    text-decoration: underline;
+}
+
+.divspan {
+    width: 50%;
+    height: 50%;
+}
+
+.divspan span {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2d2d2d;
+    font-weight: 700;
+    font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+}
+
+.divspan span:hover {
+    text-decoration: underline;
+}
+
+.box-bot {
+    width: 100%;
+    height: 20vh;
+    background-color: lightblue;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-bot img {
+    width: 20%;
+}
+
+.box-bot span {
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #2d2d2d;
+    font-weight: 400;
+    font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+}
+
+.star-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.star-item img {
+    width: 4rem;
+    height: 2rem;
+}
+
+.star-item span {
+    font-size: 1rem;
+    color: #80acf3;
+}
